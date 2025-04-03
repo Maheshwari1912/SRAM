@@ -1,4 +1,4 @@
-module sync_sram(
+module sram(
   input clk,
   input [3:0] addr,
   input [7:0] data_in,
