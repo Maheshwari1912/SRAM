@@ -1,0 +1,28 @@
+`timescale 1ns / 1ps
+
+module sram_tb();
+reg clk;
+reg [3:0] addr;
+reg [7:0] data_in;
+reg wr;
+wire [7:0] data_out;
+integer i;
+sram dut(clk,addr,data_in,wr,data_out);
+initial begin
+clk=0;
+forever #5 clk=~clk;
+end
+initial begin
+#10;
+for(i=0;i<16;i=i+1) begin
+wr=1;addr=i;data_in=i;
+#10;
+end
+#10;
+for(i=0;i<16;i=i+1) begin
+wr=0;addr=i;data_in=i;
+#10;
+end
+$finish;
+end
+endmodule
