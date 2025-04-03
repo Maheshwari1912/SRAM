@@ -13,3 +13,11 @@ The objective is to ensure that the read and write operations happen at predefin
 **Read Control:** To read data from the memory when the Wr signal is inactive, providing the stored data from the specified address. 
 
 **Reliable Timing:** To achieve predictable timing for both reading and writing operations, reducing complexity in timing analysis and integration into larger systems. 
+
+**simulation results:**
+
+![image](https://github.com/user-attachments/assets/0774590f-c7a5-4ad4-a889-e88778cfc099)
+
+**schematic:**
+
+![image](https://github.com/user-attachments/assets/b53ea510-385f-4c8c-be3e-5fdc22ba0dcd)
